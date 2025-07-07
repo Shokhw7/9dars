@@ -1,0 +1,20 @@
+{
+  "name": "9dars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "@tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "daisyui": "^5.0.43"
+  }
+}
