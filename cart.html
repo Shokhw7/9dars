@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="fantasy">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+    <header class="bg-base-300">
+      <div class="align-elements">
+        <div class="navbar">
+          <div class="navbar-start">
+            <!-- LOGO -->
+          </div>
+          <div class="navbar-center">
+            <!-- NAVBAR -->
+            <ul class="menu menu-horizontal">
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+          <div class="indicator">
+              <span class="indicator-item badge badge-secondary" id="products-amount">0</span>
+                <a href="index.html">
+                    <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <section>
+            <div class="align-elements">
+                <h2 class="my-10 text-3xl font-medium">cart:</h2>
+                <ul id="card-list" class="cart-list flex flex-col gap-5"></ul>
+                <template id="cart-template">
+                    
+                    <li class="card bg-base-200 shadow-sm hover:shadow-lg">
+                        <div class="flex flex-row items-center justify-between w-full p-5 gap-5">
+                            <img src="https://placehold.co/600x400" alt="" class="product-image w-20 h-20 rounded-2xl">
+
+                            <div>
+                                <h3 class="name">Compyuter</h3>
+                                <!-- <h5 class="brand">brand: acer</h5> -->
+                            </div>
+                            <p class="price">Price:500$</p>
+                            <div class="flex items-center gap-3">
+                                <button class="btn">+</button>
+                                <span class="quantity text-xl font-semibold">0</span>
+                                <button class="btn">-</button>
+                            </div>
+                        </div>
+                    </li>
+                
+                </template>
+            </div>
+        </section>
+    </main>
+  </head>
+  <body>
+    <script type="module" src="js/cart.js"></script>
+  </body>
+</html>

@@ -32,7 +32,9 @@
           <div class="navbar-end">
           <div class="indicator">
               <span class="indicator-item badge badge-secondary" id="products-amount">0</span>
-              <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+              <a href="cart.html">
+                <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+              </a>
             </div>
           </div>
         </div>
@@ -42,7 +44,18 @@
     <main>
       <section>
         <div class="align-elements">
-          <h2 class="text-3xl my-10">Products:</h2>
+          <div class="flex justify-between items-center">
+            <h2 class="text-3xl my-10">Products:</h2>
+            <div>
+
+              <fieldset class="fieldset">
+                <legend class="fieldset-legend">Maxsulot qidirish:</legend>
+                <input id="search-text" type="text" class="input w-80" placeholder="Type here" />
+              </fieldset>
+
+            </div>
+          </div>
+
           <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5" id="products-list">
             <template>
                <a href="about.html">

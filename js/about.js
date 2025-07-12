@@ -1,5 +1,9 @@
 import getData from "./request.js";
 import { updateUIAboutUI } from "./updateUI.js";
+import { changeBasket } from "./basket.js";
+
+const localProducts = JSON.parse(localStorage.getItem("products")) || [];
+changeBasket(localProducts);
 
 const id = new URLSearchParams(location.search).get("id");
 
@@ -10,7 +14,3 @@ if (id) {
 } else {
   console.error("ID yo'q");
 }
-
-getData("https://dummyjson.com/product/" + id)
-  .then((data) => updateUIAboutUI(data))
-  .catch((error) => console.log(error));
